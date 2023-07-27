@@ -26,8 +26,10 @@ export function NavBar() {
                                 <Nav.Link href="#home" className='text-white'><h4>A~Z</h4></Nav.Link>
                             </Nav>
                     </Col>
-                    <Col className='align-self-center' >
+                    <Col>
+                    <div className="d-flex justify-content-center me-5 mt-5">
                         <CartWidget />
+                    </div>
                     </Col>
                 </Row>
             </Container>
