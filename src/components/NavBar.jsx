@@ -1,6 +1,6 @@
 
 import { CartWidget } from './CartWidget'
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
@@ -15,7 +15,7 @@ export function NavBar() {
                             <Figure.Image
                                 width={170}
                                 height={95}
-                                src="src/assets/jump-force_logo.png" alt="logo-Jump" />
+                                src="src/assets/img/jump-force_logo.png" alt="logo-Jump" />
                         </Figure>
                     </Col>
                     <Col className='align-self-center'>
