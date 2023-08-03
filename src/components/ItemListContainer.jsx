@@ -1,5 +1,3 @@
-import { Container } from "react-bootstrap"
-
 export function ItemListContainer({greeting}){
     return(
         <div className="d-flex justify-content-center aling-self-center ">
