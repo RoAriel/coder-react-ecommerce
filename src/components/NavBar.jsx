@@ -22,7 +22,7 @@ export function NavBar() {
                             <Nav>
                                 <Nav.Link href="#home" className='text-white'><h4>Home</h4></Nav.Link>
                                 <Nav.Link href="#home" className='text-white'><h4>Mangas</h4></Nav.Link>
-                                <Nav.Link href="#home" className='text-white'><h4>Nuevos Lanzamientos</h4></Nav.Link>
+                                <Nav.Link href="#home" className='text-white'><h4>News Releases</h4></Nav.Link>
                                 <Nav.Link href="#home" className='text-white'><h4>A~Z</h4></Nav.Link>
                             </Nav>
                     </Col>
