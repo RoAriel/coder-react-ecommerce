@@ -1,10 +1,10 @@
+import { ItemCount } from "./ItemCount/ItemCount";
+// d-flex justify-content-center aling-self-center
 export function ItemListContainer({greeting}){
     return(
-        <div className="d-flex justify-content-center aling-self-center ">
+        <div className="itemsCount">
             <h1>{greeting}</h1>
+            <ItemCount />
         </div>
-
-        
-        
     )
 }
