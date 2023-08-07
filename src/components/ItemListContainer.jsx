@@ -4,7 +4,7 @@ export function ItemListContainer({greeting}){
     return(
         <div className="itemsCount">
             <h1>{greeting}</h1>
-            <ItemCount />
+            <ItemCount stock={10} initial={1}/>
         </div>
     )
 }

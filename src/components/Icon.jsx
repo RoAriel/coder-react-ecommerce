@@ -9,7 +9,7 @@ export function CartIcon() {
 
 export function IconPlus() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="white" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
         </svg>
 
@@ -19,7 +19,7 @@ export function IconPlus() {
 
 export function IconLess() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="white" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
         </svg>
 
