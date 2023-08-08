@@ -43,3 +43,14 @@
 .bg-gradiant{background: rgb(0, 153, 255);
 background: linear-gradient(180deg, rgba(0, 153, 255, 1) 0%, rgba(145, 211, 255, 1) 90%, rgba(255, 255, 255, 0.32816876750700286) 100%); 
 }
+
+.item-count-bts:hover {
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.item-count-bts:active {
+    border-radius: 12px;
+    background-color: #09f;
+   
+  }
