@@ -5,7 +5,6 @@
 }
 
 .item-count {
-
     width: max-content;
     display: flex;
     align-items: center;
@@ -17,7 +16,6 @@
 }
 
 .item-container-count {
-
     font-size: 16px;
     font-weight: bold;
     border-radius: 12px;
@@ -46,7 +44,7 @@ background: linear-gradient(180deg, rgba(0, 153, 255, 1) 0%, rgba(145, 211, 255,
 
 .item-count-bts:hover {
     border-radius: 12px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .item-count-bts:active {
