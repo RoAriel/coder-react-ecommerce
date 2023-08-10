@@ -1,6 +1,6 @@
 import "./ItemCount.css"
 import { useState } from "react"
-import { IconPlus, IconLess, CartIcon } from "../Icon"
+import { IconPlus, IconLess, CartIcon } from "../Icon/Icon"
 
 export function ItemCount({stock, initial, onAdd}){
 

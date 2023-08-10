@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "https://www.innovaventas.com/tienda/wp-content/uploads/2020/07/camara-web-imilab-cmsxj22a-2mp-full-hd-2-300x300.jpg",
+        "name": "Cámara web Xiaomi",
+        "stock": 10,
+        "price": 14999
+    },
+    {
+        "id": 2,
+        "image": "https://cdn.shopify.com/s/files/1/0055/6400/6434/products/51Mov6F8z5L_800x_2cccac65-8649-4cf8-9bb7-eefc1feafc29_300x.jpg?v=1602717301",
+        "name": "Smart Watch Imilab KW66",
+        "stock": 10,
+        "price": 5900
+    },
+    {
+        "id": 3,
+        "image": "https://www.elkjop.no/image/dv_web_D180001002180018/10014/chromecast-3-generasjon.jpg?$prod$",
+        "name": "ChromeCast 3",
+        "stock": 10,
+        "price": 26300
+    },
+    {
+        "id": 4,
+        "image": "https://www.adorama.com/images/300x300/logg603.jpg",
+        "name": "Mouse Logitech wireless",
+        "stock": 10,
+        "price": 1200
+    },
+    {
+        "id": 5,
+        "image": "https://d2r9epyceweg5n.cloudfront.net/stores/001/710/410/products/auriculares-dragon-war-freya-ghs00711-f9591d82e05edf148316231664771725-1024-1024.jpg",
+        "name": "Auriculares Dragon War",
+        "stock": 10,
+        "price": 120000
+    },
+    {
+        "id": 6,
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TroSBzh4_ibrX1JM9PAEKwAAAA%26pid%3DApi&f=1",
+        "name": "Celular iPhone 12",
+        "stock": 10,
+        "price": 240000
+    }
+]

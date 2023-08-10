@@ -1,5 +1,5 @@
 
-import { CartWidget } from './CartWidget'
+import { CartWidget } from '../CartWodget/CartWidget'
 import { Nav, Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

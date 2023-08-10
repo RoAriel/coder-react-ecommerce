@@ -1,4 +1,4 @@
-import { CartIcon } from './Icon';
+import { CartIcon } from '../Icon/Icon';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 
