@@ -1,0 +1,40 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-container img {
+    width: 150px;
+    height: 110px;
+}
+
+.nav-rout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-rout a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+
+    animation: slide-top 0.2s linear both;
+    color: #09f;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-10px)
+    }
+}

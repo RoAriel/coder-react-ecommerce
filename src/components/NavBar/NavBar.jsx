@@ -1,37 +1,23 @@
-
-import { CartWidget } from '../CartWodget/CartWidget'
-import { Nav, Container } from "react-bootstrap";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Figure from 'react-bootstrap/Figure';
+import './NavBar.css'
+import { CartWidget } from '../CartWidget/CartWidget'
 
 export function NavBar() {
     return (
-        <header>
-            <Container className="bg-dark p-0" fluid>
-                <Row>
-                    <Col className='text-center'>
-                        <Figure>
-                            <Figure.Image
-                                width={170}
-                                height={95}
-                                src="src/assets/img/jump-force_logo.png" alt="logo-Jump" />
-                        </Figure>
-                    </Col>
-                    <Col className='align-self-center'>
-                            <Nav>
-                                <Nav.Link href="#home" className='text-white'><h4>Home</h4></Nav.Link>
-                                <Nav.Link href="#home" className='text-white'><h4>Mangas</h4></Nav.Link>
-                                <Nav.Link href="#home" className='text-white'><h4>A~Z</h4></Nav.Link>
-                            </Nav>
-                    </Col>
-                    <Col>
-                    <div className="d-flex justify-content-center me-5 mt-5">
+            <div className='nav-container'>
+
+                    <img src="src/assets/img/jump-force_logo.png" alt="logo-Jump" />
+
+                    <nav className='nav-rout'>
+                        <a href="#"><h4>Home</h4></a>
+                        <a href="#"><h4>Mangas</h4></a>
+                        <a href="#"><h4>A~Z</h4></a>
+                    </nav>
+                <div>
+                    <div>
                         <CartWidget />
                     </div>
-                    </Col>
-                </Row>
-            </Container>
-        </header>
+                </div>
+            </div>
+
     )
 }
