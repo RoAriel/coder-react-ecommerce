@@ -10,9 +10,6 @@ export function App() {
 
   return (
     <>
-    <header>
-      <NavBar className='app-header' />
-    </header>
       <main className='app-main' >
           <ItemListContainer />
       </main>

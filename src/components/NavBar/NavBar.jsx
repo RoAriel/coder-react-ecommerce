@@ -5,18 +5,15 @@ import { CartWidget } from '../CartWidget/CartWidget'
 export function NavBar() {
     return (
             <div className='nav-container'>
-
                     <Link to='/'><img src="src/assets/img/jump-force_logo.png" alt="logo-Jump" /></Link>
-
                     <nav className='nav-rout'>
                         <Link className='category' to="/"><h4>Home</h4></Link>
-                        <Link className='category' to="/mangas"><h4>Mangas</h4></Link>
-                        <Link className='category' to="/manhwas"><h4>Manhwas</h4></Link>
+                        <Link className='category' to="/productos"><h4>Products</h4></Link>
+                        <Link className='category' to="/productos/mangas"><h4>Mangas</h4></Link>
+                        <Link className='category' to="/productos/manhwas"><h4>Manhwas</h4></Link>
                     </nav>
                 <div>
-                    <div>
-                        <CartWidget />
-                    </div>
+                    <Link to="/shop"><CartWidget /></Link>
                 </div>
             </div>
 
