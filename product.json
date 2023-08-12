@@ -1,44 +1,202 @@
 [
     {
-        "id": 1,
-        "image": "https://www.innovaventas.com/tienda/wp-content/uploads/2020/07/camara-web-imilab-cmsxj22a-2mp-full-hd-2-300x300.jpg",
-        "name": "Cámara web Xiaomi",
-        "stock": 10,
-        "price": 14999
+        "id": "1",
+        "name": "Black Clover",
+        "volumen": "1",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Black Clover",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/VN1f4N5n/blackclover01.webp"
     },
     {
-        "id": 2,
-        "image": "https://cdn.shopify.com/s/files/1/0055/6400/6434/products/51Mov6F8z5L_800x_2cccac65-8649-4cf8-9bb7-eefc1feafc29_300x.jpg?v=1602717301",
-        "name": "Smart Watch Imilab KW66",
-        "stock": 10,
-        "price": 5900
+        "id": "2",
+        "name": "Black Clover",
+        "volumen": "5",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Black Clover",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/J0yMtDdV/blackclover05.webp"
     },
     {
-        "id": 3,
-        "image": "https://www.elkjop.no/image/dv_web_D180001002180018/10014/chromecast-3-generasjon.jpg?$prod$",
-        "name": "ChromeCast 3",
-        "stock": 10,
-        "price": 26300
+        "id": "3",
+        "name": "Black Clover",
+        "volumen": "6",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Black Clover",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/1XLPFmLg/blackclover06.webp"
     },
     {
-        "id": 4,
-        "image": "https://www.adorama.com/images/300x300/logg603.jpg",
-        "name": "Mouse Logitech wireless",
-        "stock": 10,
-        "price": 1200
+        "id": "4",
+        "name": "Black Clover",
+        "volumen": "11",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Black Clover",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/HLpmXPPt/blackclover11.webp"
     },
     {
-        "id": 5,
-        "image": "https://d2r9epyceweg5n.cloudfront.net/stores/001/710/410/products/auriculares-dragon-war-freya-ghs00711-f9591d82e05edf148316231664771725-1024-1024.jpg",
-        "name": "Auriculares Dragon War",
-        "stock": 10,
-        "price": 120000
+        "id": "5",
+        "name": "Demon Slayer",
+        "volumen": "1",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Demon Slayer",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/tCx9j6xF/demonslayer01.webp"
     },
     {
-        "id": 6,
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TroSBzh4_ibrX1JM9PAEKwAAAA%26pid%3DApi&f=1",
-        "name": "Celular iPhone 12",
-        "stock": 10,
-        "price": 240000
+        "id": "6",
+        "name": "Demon Slayer",
+        "volumen": "7",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Demon Slayer",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/mZqTJjtb/demonslayer07.webp"
+    },
+    {
+        "id": "7",
+        "name": "Demon Slayer",
+        "volumen": "9",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Demon Slayer",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/bw08GjLJ/demonslayer09.webp"
+    },
+    {
+        "id": "8",
+        "name": "Demon Slayer",
+        "volumen": "11",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Demon Slayer",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/3xQYJwXV/demonslayer11.webp"
+    },
+    {
+        "id": "9",
+        "name": "My Hero Academia",
+        "volumen": "06",
+        "price": "2500",
+        "stock": "10",
+        "collection": "My Hero Academia",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/LhKKXy1L/myheroacademia06.webp"
+    },
+    {
+        "id": "10",
+        "name": "My Hero Academia",
+        "volumen": "07",
+        "price": "2500",
+        "stock": "10",
+        "collection": "My Hero Academia",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/66DyntVL/myheroacademia07.webp"
+    },
+    {
+        "id": "11",
+        "name": "My Hero Academia",
+        "volumen": "10",
+        "price": "2500",
+        "stock": "10",
+        "collection": "My Hero Academia",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/ZKp0L2Vk/myheroacademia10.webp"
+    },
+    {
+        "id": "12",
+        "name": "My Hero Academia",
+        "volumen": "11",
+        "price": "2500",
+        "stock": "10",
+        "collection": "My Hero Academia",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/y8KxpjbD/myheroacademia11.webp"
+    },
+    {
+        "id": "13",
+        "name": "Shaman King",
+        "volumen": "2",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Shaman King",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/W3d1qHhH/shamankingk-02.webp"
+    },
+    {
+        "id": "14",
+        "name": "Shaman King",
+        "volumen": "4",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Shaman King",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/zfXB8B55/shamankingk-04.webp"
+    },
+    {
+        "id": "15",
+        "name": "Shaman King",
+        "volumen": "6",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Shaman King",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/yNQNdHYR/shamankingk-06.webp"
+    },
+    {
+        "id": "16",
+        "name": "Shaman King",
+        "volumen": "3",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Shaman King",
+        "category": "mangas",
+        "urlImage": "https://i.postimg.cc/T3cwzbzC/shamanking-03.webp"
+    },
+    {
+        "id": "17",
+        "name": "Solo Leveling",
+        "volumen": "1",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Solo Leveling",
+        "category": "manhwa",
+        "urlImage": "https://i.postimg.cc/5NBNzv2b/sololeveling01.webp"
+    },
+    {
+        "id": "18",
+        "name": "Solo Leveling",
+        "volumen": "2",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Solo Leveling",
+        "category": "manhwa",
+        "urlImage": "https://i.postimg.cc/x1gfx2mZ/sololeveling02.webp"
+    },
+    {
+        "id": "19",
+        "name": "Solo Leveling",
+        "volumen": "3",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Solo Leveling",
+        "category": "manhwa",
+        "urlImage": "https://i.postimg.cc/dQT0qgM7/sololeveling03.webp"
+    },
+    {
+        "id": "20",
+        "name": "Solo Leveling",
+        "volumen": "4",
+        "price": "2500",
+        "stock": "10",
+        "collection": "Solo Leveling",
+        "category": "manhwa",
+        "urlImage": "https://i.postimg.cc/tgTX8Mt4/sololeveling04.webp"
     }
 ]

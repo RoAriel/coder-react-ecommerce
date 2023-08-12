@@ -6,7 +6,7 @@ export function ItemDetail({ item }) {
     return (
         <article className='card'>
             <div className='container'>
-                <img src={item.image} alt="product" />
+                <img src={item.urlImage} alt="front manga" />
             </div>
             <div className='content'>
                 <h2 className='title'>
