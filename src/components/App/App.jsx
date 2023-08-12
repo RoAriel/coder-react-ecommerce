@@ -12,7 +12,7 @@ export function App() {
       <NavBar className='app-header' />
     </header>
       <main className='app-main' >
-        <ItemListContainer greeting={"Hello everyone, I'm here!"}/>
+        <ItemListContainer />
       </main>
 
     </>

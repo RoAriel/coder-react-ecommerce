@@ -1,16 +1,16 @@
 import './Item.css';
 
 
-export function Item({ item }) {
+export function Item({ image, name }) {
 
     return (
-        <button className='card'>
-                <div className='container'>
-                    <img src={item.urlImage} alt="front manga" />
+        <button className='i-card'>
+                <div className='i-container'>
+                    <img src={image} alt="front manga" />
                 </div>
-                <div className='content'>
-                    <h2 className='title'>
-                        {item.name}
+                <div className='i-content'>
+                    <h2 className='i-title'>
+                        {name}
                     </h2>
                 </div>
         </button>
