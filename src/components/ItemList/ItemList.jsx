@@ -7,7 +7,7 @@ export function ItemList({ items = [] }) {
         <section className='il-container'>
             {items.map((item) => {
                 return (
-                    <Link>
+                    <Link className='il-item-link'>
                         <Item
                             key={item.id}
                             image={item.urlImage}

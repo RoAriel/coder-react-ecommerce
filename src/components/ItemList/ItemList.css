@@ -5,3 +5,7 @@
     margin-top: 1rem;
     flex-wrap: wrap;
 }
+
+.il-item-link{
+    text-decoration: none;
+}
