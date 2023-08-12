@@ -22,6 +22,8 @@ export function ItemListContainer(){
     if(isLoading) return <Loader/>
 
     return(
+        <section className='ilc-container'>
             <ItemList items={items}/>
+        </section>
     )
 }

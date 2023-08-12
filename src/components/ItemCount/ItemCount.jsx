@@ -11,8 +11,15 @@ export function ItemCount({stock, initial, onAdd}){
     }
 
     const handlePlus = () =>{
-        (count < stock)  ? setCount(count+1) : count
-
+        // (count < stock)  ? setCount(count+1) : count
+        console.log(stock)
+        if (count < stock){
+            setCount(count+1)
+            console.log(count)
+        }else{
+            console.log('pase')
+            return
+        }
     }
 
     const handleOnAdd =() =>{

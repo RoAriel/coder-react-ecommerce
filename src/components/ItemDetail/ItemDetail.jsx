@@ -1,21 +1,21 @@
 import './ItemDetail.css';
-import {ItemCount} from '../ItemCount/ItemCount'
-export function ItemDetail({ item }) {
+import { ItemCount } from '../ItemCount/ItemCount'
+export function ItemDetail({ name, price, stock, image }) {
 
-    const price = new Intl.NumberFormat().format(parseFloat(item.price))
+    const formatPrice = new Intl.NumberFormat().format(parseFloat(price))
     return (
-        <article className='card'>
-            <div className='container'>
-                <img src={item.urlImage} alt="front manga" />
+        <article className='itm-d-body'>
+            <div className=''>
+                <img src={image} alt="front manga" />
             </div>
-            <div className='content'>
-                <h2 className='title'>
-                    {item.name}
+            <div className='itm-d-content'>
+                <h2 className='itm-d-title'>
+                    {name}
                 </h2>
-                <p className='price'>${price}</p>
-                <p className='descriptiom'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, itaque. Nobis tempora officia eos consequatur, odio perferendis sit quod, non iusto odit id cum dolorem cupiditate sapiente nihil fugiat ipsum.</p>
+                <p className='itm-d-price'>${formatPrice}</p>
+                <p className='itm-d-descriptiom'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, itaque. Nobis tempora officia eos consequatur, odio perferendis sit quod, non iusto odit id cum dolorem cupiditate sapiente nihil fugiat ipsum.</p>
             </div>
-        <ItemCount stock={item.stock} initial={1}/>
+            <ItemCount stock={stock} initial={1} />
         </article>
     )
 }

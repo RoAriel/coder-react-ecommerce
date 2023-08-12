@@ -1,3 +1,7 @@
-.container{
+.idc-container{
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
