@@ -17,9 +17,6 @@ export function ItemList() {
             })
     }, [])
 
-
-
-
     return (
         <section>
             {isLoading && <h4>Cargando...</h4>}
