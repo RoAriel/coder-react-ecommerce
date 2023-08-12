@@ -2,22 +2,23 @@ import './ItemDetailContainer.css'
 import {ItemDetail} from '../ItemDetail/ItemDetail'
 import { useEffect, useState } from "react"
 import {Loader } from '../Loader/Loader'
+import { useParams } from 'react-router-dom';
 
-export function ItemDetailContainer({itemId = 0}){
+export function ItemDetailContainer({id}){
 
     const [isLoading, setIsLoading] = useState(true);
     const [item, setItem] = useState([]);
-   
+    
     useEffect(() => {
         fetch("product.json")
             .then(response => {
                 return response.json()
             })
             .then(data => {
-                const newItem = data.filter(item => item.id === itemId)
+                const newItem = data.filter(item => item.id === id)
                 setItem(newItem)
                 setIsLoading(false)
-            })
+            }).catch(console.error('Algo salio mal'))
     }, [])
 
     if(isLoading) return <Loader/>
