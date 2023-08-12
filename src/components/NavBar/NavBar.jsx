@@ -1,11 +1,12 @@
 import './NavBar.css'
+import { Link } from "react-router-dom";
 import { CartWidget } from '../CartWidget/CartWidget'
 
 export function NavBar() {
     return (
             <div className='nav-container'>
 
-                    <img src="src/assets/img/jump-force_logo.png" alt="logo-Jump" />
+                    <Link to='/'><img src="src/assets/img/jump-force_logo.png" alt="logo-Jump" /></Link>
 
                     <nav className='nav-rout'>
                         <a href="#"><h4>Home</h4></a>

@@ -14,8 +14,7 @@ export function App() {
       <NavBar className='app-header' />
     </header>
       <main className='app-main' >
-          {/* <ItemListContainer />  */}
-         <ItemDetailContainer itemId='1' />
+          <ItemListContainer />
       </main>
 
     </>
