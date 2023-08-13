@@ -1,29 +1,27 @@
 import './ItemListContainer.css'
+import { getItems } from '../Utils/asyncMock'
 import { useEffect, useState } from "react"
-import {Loader } from '../Loader/Loader'
+import { Loader } from '../Loader/Loader'
 import { ItemList } from "../ItemList/ItemList";
 
-export function ItemListContainer(){
-    
+export function ItemListContainer() {
+
     const [isLoading, setIsLoading] = useState(true);
     const [items, setItems] = useState([]);
-   
+
     useEffect(() => {
-        fetch("product.json")
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                setItems(data)
+        getItems()
+            .then((res) => {
+                setItems(res)
                 setIsLoading(false)
             })
     }, [])
 
-    if(isLoading) return <Loader/>
+    if (isLoading) return <Loader />
 
-    return(
+    return (
         <section className='ilc-container'>
-            <ItemList items={items}/>
+            <ItemList items={items} />
         </section>
     )
 }

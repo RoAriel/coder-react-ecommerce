@@ -1,36 +1,34 @@
 import './ItemDetailContainer.css'
-import {ItemDetail} from '../ItemDetail/ItemDetail'
+import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useEffect, useState } from "react"
-import {Loader } from '../Loader/Loader'
+import { Loader } from '../Loader/Loader'
+import { getItem } from '../Utils/asyncMock'
 import { useParams } from 'react-router-dom';
 
-export function ItemDetailContainer({id}){
+export function ItemDetailContainer() {
 
     const [isLoading, setIsLoading] = useState(true);
     const [item, setItem] = useState([]);
+    const id = useParams().itemId
     
     useEffect(() => {
-        fetch("product.json")
-            .then(response => {
-                return response.json()
+        getItem(id)
+        .then(item => {
+            setItem(item)
+            setIsLoading(false)
             })
-            .then(data => {
-                const newItem = data.filter(item => item.id === id)
-                setItem(newItem)
-                setIsLoading(false)
-            }).catch(console.error('Algo salio mal'))
     }, [])
 
-    if(isLoading) return <Loader/>
+    if (isLoading) return <Loader />
     return (
-       
+
         <section className="idc-container">
-            <ItemDetail 
-                name={item[0].name}
-                price={item[0].price}
-                stock={item[0].stock}
-                image={item[0].urlImage}
-                
+            <ItemDetail
+                name={item.name}
+                price={item.price}
+                stock={item.stock}
+                image={item.urlImage}
+
             />
         </section>
     )

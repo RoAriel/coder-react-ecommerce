@@ -1,16 +1,22 @@
-import data from 'product.json'
+import data from '../../product.json'
 
 export function getItems(){
     return new Promise((resolve,reject) =>{
-        resolve(data)
+        setTimeout(()=>{
+            resolve(data)
+
+        },1000)
     })
 
 };
 
-export function getIten(id){
+export function getItem(id){
     return new Promise((resolve,reject) =>{
-        const item = data.filter(item => item.id === id)
-        resolve(item[0])
+        setTimeout(()=>{
+            const item = data.filter(item => item.id === id)
+            resolve(item[0])
+
+        },1000)
     })
 };
 
