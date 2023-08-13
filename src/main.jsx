@@ -19,7 +19,7 @@ root.render(
             <Routes>
                 <Route path='/' element={<App />} />
                 <Route path='/item/:itemId' element={<ItemDetailContainer />} />
-                <Route path='/products/:category' element={<ItemListContainer />} />
+                <Route path='/category/:category' element={<ItemListContainer />} />
                 <Route path='/shop' element={<ItemShop />} />
             </Routes>
         </BrowserRouter>
