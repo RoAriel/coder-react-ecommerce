@@ -1,7 +1,7 @@
 import './Item.css';
 
 
-export function Item({ image, name }) {
+export function Item({ image, name,volumen }) {
 
     return (
         <button className='i-card'>
@@ -9,7 +9,7 @@ export function Item({ image, name }) {
                 <img src={image} alt="front manga" />
             </div>
             <div className='i-content'>
-                <h2 className='i-title'>{name}</h2>
+                <h2 className='i-title'>{name+' v.'+volumen}</h2>
             </div>
         </button>
     )

@@ -1,9 +1,19 @@
+.il-category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color:white;
+}
+
 .il-container{
+
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    margin-top: 1rem;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 .il-item-link{

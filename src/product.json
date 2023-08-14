@@ -7,7 +7,8 @@
         "stock": "10",
         "collection": "Black Clover",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/VN1f4N5n/blackclover01.webp"
+        "urlImage": "https://i.postimg.cc/VN1f4N5n/blackclover01.webp",
+        "plot": "The story goes that humanity was about to fall under the yoke of the Demon King, but a lone magician defeated him to bring peace to the world. That wizard became a legend and was named the first Wizard King. The Clover Kingdom lived in peace through the generations and the wise men and nine subordinate magical orders kept the people happy. But this is not the story of this great hero, but of Asta and Yuno, two orphans who were raised together from birth after being abandoned in the Hage church, located in the forgotten area of the Clover Kingdom."
     },
     {
         "id": "2",
@@ -17,7 +18,8 @@
         "stock": "10",
         "collection": "Black Clover",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/J0yMtDdV/blackclover05.webp"
+        "urlImage": "https://i.postimg.cc/J0yMtDdV/blackclover05.webp",
+        "plot": "The story goes that humanity was about to fall under the yoke of the Demon King, but a lone magician defeated him to bring peace to the world. That wizard became a legend and was named the first Wizard King. The Clover Kingdom lived in peace through the generations and the wise men and nine subordinate magical orders kept the people happy. But this is not the story of this great hero, but of Asta and Yuno, two orphans who were raised together from birth after being abandoned in the Hage church, located in the forgotten area of the Clover Kingdom."
     },
     {
         "id": "3",
@@ -27,7 +29,8 @@
         "stock": "10",
         "collection": "Black Clover",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/1XLPFmLg/blackclover06.webp"
+        "urlImage": "https://i.postimg.cc/1XLPFmLg/blackclover06.webp",
+        "plot": "The story goes that humanity was about to fall under the yoke of the Demon King, but a lone magician defeated him to bring peace to the world. That wizard became a legend and was named the first Wizard King. The Clover Kingdom lived in peace through the generations and the wise men and nine subordinate magical orders kept the people happy. But this is not the story of this great hero, but of Asta and Yuno, two orphans who were raised together from birth after being abandoned in the Hage church, located in the forgotten area of the Clover Kingdom."
     },
     {
         "id": "4",
@@ -37,7 +40,8 @@
         "stock": "10",
         "collection": "Black Clover",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/HLpmXPPt/blackclover11.webp"
+        "urlImage": "https://i.postimg.cc/HLpmXPPt/blackclover11.webp",
+        "plot": "The story goes that humanity was about to fall under the yoke of the Demon King, but a lone magician defeated him to bring peace to the world. That wizard became a legend and was named the first Wizard King. The Clover Kingdom lived in peace through the generations and the wise men and nine subordinate magical orders kept the people happy. But this is not the story of this great hero, but of Asta and Yuno, two orphans who were raised together from birth after being abandoned in the Hage church, located in the forgotten area of the Clover Kingdom."
     },
     {
         "id": "5",
@@ -47,7 +51,8 @@
         "stock": "10",
         "collection": "Demon Slayer",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/tCx9j6xF/demonslayer01.webp"
+        "urlImage": "https://i.postimg.cc/tCx9j6xF/demonslayer01.webp",
+        "plot": "Demon Slayer takes place in the feudal Japan of the Taisho Era, although in a version with fantastic elements, such as nice demons that eat human flesh. It narrates the adventures of Tanjiro Kamado, a kind and kind-hearted young man who lives with his mother and five of his brothers in the mountains, and is dedicated to selling coal to survive."
     },
     {
         "id": "6",
@@ -57,7 +62,8 @@
         "stock": "10",
         "collection": "Demon Slayer",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/mZqTJjtb/demonslayer07.webp"
+        "urlImage": "https://i.postimg.cc/mZqTJjtb/demonslayer07.webp",
+        "plot": "Demon Slayer takes place in the feudal Japan of the Taisho Era, although in a version with fantastic elements, such as nice demons that eat human flesh. It narrates the adventures of Tanjiro Kamado, a kind and kind-hearted young man who lives with his mother and five of his brothers in the mountains, and is dedicated to selling coal to survive."
     },
     {
         "id": "7",
@@ -67,7 +73,8 @@
         "stock": "10",
         "collection": "Demon Slayer",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/bw08GjLJ/demonslayer09.webp"
+        "urlImage": "https://i.postimg.cc/bw08GjLJ/demonslayer09.webp",
+        "plot": "Demon Slayer takes place in the feudal Japan of the Taisho Era, although in a version with fantastic elements, such as nice demons that eat human flesh. It narrates the adventures of Tanjiro Kamado, a kind and kind-hearted young man who lives with his mother and five of his brothers in the mountains, and is dedicated to selling coal to survive."
     },
     {
         "id": "8",
@@ -77,27 +84,30 @@
         "stock": "10",
         "collection": "Demon Slayer",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/3xQYJwXV/demonslayer11.webp"
+        "urlImage": "https://i.postimg.cc/3xQYJwXV/demonslayer11.webp",
+        "plot": "Demon Slayer takes place in the feudal Japan of the Taisho Era, although in a version with fantastic elements, such as nice demons that eat human flesh. It narrates the adventures of Tanjiro Kamado, a kind and kind-hearted young man who lives with his mother and five of his brothers in the mountains, and is dedicated to selling coal to survive."
     },
     {
         "id": "9",
         "name": "My Hero Academia",
-        "volumen": "06",
+        "volumen": "6",
         "price": "2500",
         "stock": "10",
         "collection": "My Hero Academia",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/LhKKXy1L/myheroacademia06.webp"
+        "urlImage": "https://i.postimg.cc/LhKKXy1L/myheroacademia06.webp",
+        "plot": "The story is located in a reality in which more than 80% of the world population has developed a gift, that is, superpowers that give them great abilities. That is the common, the natural, what everyone hopes to get at some point. As a consequence, superheroes and supervillains, and their respective followers and detractors, are also commonplace."
     },
     {
         "id": "10",
         "name": "My Hero Academia",
-        "volumen": "07",
+        "volumen": "7",
         "price": "2500",
         "stock": "10",
         "collection": "My Hero Academia",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/66DyntVL/myheroacademia07.webp"
+        "urlImage": "https://i.postimg.cc/66DyntVL/myheroacademia07.webp",
+        "plot": "The story is located in a reality in which more than 80% of the world population has developed a gift, that is, superpowers that give them great abilities. That is the common, the natural, what everyone hopes to get at some point. As a consequence, superheroes and supervillains, and their respective followers and detractors, are also commonplace."
     },
     {
         "id": "11",
@@ -107,7 +117,8 @@
         "stock": "10",
         "collection": "My Hero Academia",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/ZKp0L2Vk/myheroacademia10.webp"
+        "urlImage": "https://i.postimg.cc/ZKp0L2Vk/myheroacademia10.webp",
+        "plot": "The story is located in a reality in which more than 80% of the world population has developed a gift, that is, superpowers that give them great abilities. That is the common, the natural, what everyone hopes to get at some point. As a consequence, superheroes and supervillains, and their respective followers and detractors, are also commonplace."
     },
     {
         "id": "12",
@@ -117,7 +128,8 @@
         "stock": "10",
         "collection": "My Hero Academia",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/y8KxpjbD/myheroacademia11.webp"
+        "urlImage": "https://i.postimg.cc/y8KxpjbD/myheroacademia11.webp",
+        "plot": "The story is located in a reality in which more than 80% of the world population has developed a gift, that is, superpowers that give them great abilities. That is the common, the natural, what everyone hopes to get at some point. As a consequence, superheroes and supervillains, and their respective followers and detractors, are also commonplace."
     },
     {
         "id": "13",
@@ -127,7 +139,8 @@
         "stock": "10",
         "collection": "Shaman King",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/W3d1qHhH/shamankingk-02.webp"
+        "urlImage": "https://i.postimg.cc/W3d1qHhH/shamankingk-02.webp",
+        "plot": "Shamans are people who can interact with the gods, spirits, and souls of the deceased. Yoh has that power and wants to become the shaman king, someone capable of establishing contact with the Great Spirits, which would allow him to change the world at his whim. To achieve this, he will have to get a spirit that accompanies him and participate in the Shaman Fight: a tournament that is held every 500 years, getting a good group of allies and friends along the way."
     },
     {
         "id": "14",
@@ -137,7 +150,8 @@
         "stock": "10",
         "collection": "Shaman King",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/zfXB8B55/shamankingk-04.webp"
+        "urlImage": "https://i.postimg.cc/zfXB8B55/shamankingk-04.webp",
+        "plot": "Shamans are people who can interact with the gods, spirits, and souls of the deceased. Yoh has that power and wants to become the shaman king, someone capable of establishing contact with the Great Spirits, which would allow him to change the world at his whim. To achieve this, he will have to get a spirit that accompanies him and participate in the Shaman Fight: a tournament that is held every 500 years, getting a good group of allies and friends along the way."
     },
     {
         "id": "15",
@@ -147,7 +161,8 @@
         "stock": "10",
         "collection": "Shaman King",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/yNQNdHYR/shamankingk-06.webp"
+        "urlImage": "https://i.postimg.cc/yNQNdHYR/shamankingk-06.webp",
+        "plot": "Shamans are people who can interact with the gods, spirits, and souls of the deceased. Yoh has that power and wants to become the shaman king, someone capable of establishing contact with the Great Spirits, which would allow him to change the world at his whim. To achieve this, he will have to get a spirit that accompanies him and participate in the Shaman Fight: a tournament that is held every 500 years, getting a good group of allies and friends along the way."
     },
     {
         "id": "16",
@@ -157,7 +172,8 @@
         "stock": "10",
         "collection": "Shaman King",
         "category": "manga",
-        "urlImage": "https://i.postimg.cc/T3cwzbzC/shamanking-03.webp"
+        "urlImage": "https://i.postimg.cc/T3cwzbzC/shamanking-03.webp",
+        "plot": "Shamans are people who can interact with the gods, spirits, and souls of the deceased. Yoh has that power and wants to become the shaman king, someone capable of establishing contact with the Great Spirits, which would allow him to change the world at his whim. To achieve this, he will have to get a spirit that accompanies him and participate in the Shaman Fight: a tournament that is held every 500 years, getting a good group of allies and friends along the way."
     },
     {
         "id": "17",
@@ -167,7 +183,8 @@
         "stock": "10",
         "collection": "Solo Leveling",
         "category": "manhwa",
-        "urlImage": "https://i.postimg.cc/5NBNzv2b/sololeveling01.webp"
+        "urlImage": "https://i.postimg.cc/5NBNzv2b/sololeveling01.webp",
+        "plot": "A decade ago and surprisingly, some strange portals appeared around the world connecting our reality with a dimension that is home to monstrous creatures. At the same time, an evolution took place in a small percentage of humanity that led them to develop new abilities. Backed by the government and having become a new way of making a living, these humans known as hunters go through the portals to defeat the creatures that inhabit them and prevent them from invading our reality."
     },
     {
         "id": "18",
@@ -177,7 +194,8 @@
         "stock": "10",
         "collection": "Solo Leveling",
         "category": "manhwa",
-        "urlImage": "https://i.postimg.cc/x1gfx2mZ/sololeveling02.webp"
+        "urlImage": "https://i.postimg.cc/x1gfx2mZ/sololeveling02.webp",
+        "plot": "A decade ago and surprisingly, some strange portals appeared around the world connecting our reality with a dimension that is home to monstrous creatures. At the same time, an evolution took place in a small percentage of humanity that led them to develop new abilities. Backed by the government and having become a new way of making a living, these humans known as hunters go through the portals to defeat the creatures that inhabit them and prevent them from invading our reality."
     },
     {
         "id": "19",
@@ -187,16 +205,18 @@
         "stock": "10",
         "collection": "Solo Leveling",
         "category": "manhwa",
-        "urlImage": "https://i.postimg.cc/dQT0qgM7/sololeveling03.webp"
+        "urlImage": "https://i.postimg.cc/dQT0qgM7/sololeveling03.webp",
+        "plot": "A decade ago and surprisingly, some strange portals appeared around the world connecting our reality with a dimension that is home to monstrous creatures. At the same time, an evolution took place in a small percentage of humanity that led them to develop new abilities. Backed by the government and having become a new way of making a living, these humans known as hunters go through the portals to defeat the creatures that inhabit them and prevent them from invading our reality."
     },
     {
-        "id": "20",
+        "id": "21",
         "name": "Solo Leveling",
         "volumen": "4",
         "price": "2500",
         "stock": "10",
         "collection": "Solo Leveling",
         "category": "manhwa",
-        "urlImage": "https://i.postimg.cc/tgTX8Mt4/sololeveling04.webp"
+        "urlImage": "https://i.postimg.cc/tgTX8Mt4/sololeveling04.webp",
+        "plot": "A decade ago and surprisingly, some strange portals appeared around the world connecting our reality with a dimension that is home to monstrous creatures. At the same time, an evolution took place in a small percentage of humanity that led them to develop new abilities. Backed by the government and having become a new way of making a living, these humans known as hunters go through the portals to defeat the creatures that inhabit them and prevent them from invading our reality."
     }
 ]

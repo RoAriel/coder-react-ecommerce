@@ -28,6 +28,8 @@ export function ItemDetailContainer() {
                 price={item.price}
                 stock={item.stock}
                 image={item.urlImage}
+                plot={item.plot}
+                volumen={item.volumen}
 
             />
         </section>
