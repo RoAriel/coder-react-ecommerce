@@ -17,7 +17,6 @@ export function getItem(id) {
 export function getCategory(category) {
     return new Promise((resolve, reject) => {
             const itemCategory = data.filter(item => item.category === category)
-            console.log('Dentro del metodo esto es:', itemCategory )
             resolve(itemCategory)
     })
 };

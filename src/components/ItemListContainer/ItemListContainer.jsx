@@ -28,10 +28,6 @@ export function ItemListContainer() {
     
     if (isLoading) return <Loader />
 
-    console.log(category)
-
-    console.log(items)
-
     return (
         <section className='ilc-container'>
             <ItemList items={items}  category={category}/>
