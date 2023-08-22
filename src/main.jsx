@@ -24,7 +24,7 @@ root.render(
                     <Route path='/' element={<App />} />
                     <Route path='/item/:itemId' element={<ItemDetailContainer />} />
                     <Route path='/category/:category' element={<ItemListContainer />} />
-                    <Route path='/shop' element={<ItemShop />} />
+                    <Route path='/cart' element={<ItemShop />} />
                 </Routes>
             </BrowserRouter>
         </CartProvider>

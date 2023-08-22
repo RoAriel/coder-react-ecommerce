@@ -11,7 +11,7 @@ export function CartWidget() {
 
         <button className='circle'>
             <CartIcon/>
-            <span>10</span>
+            <span>0</span>
         </button>
 
     )

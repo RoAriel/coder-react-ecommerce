@@ -23,15 +23,7 @@ export function ItemDetailContainer() {
     return (
 
         <section className="idc-container">
-            <ItemDetail
-                name={item.name}
-                price={item.price}
-                stock={item.stock}
-                image={item.urlImage}
-                plot={item.plot}
-                volumen={item.volumen}
-
-            />
+            <ItemDetail item={item}/>
         </section>
     )
 }

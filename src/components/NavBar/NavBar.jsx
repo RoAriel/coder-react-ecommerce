@@ -12,7 +12,7 @@ export function NavBar() {
                         <Link className='category' to="/category/manhwa"><h4>Manhwas</h4></Link>
                     </nav>
                 <div>
-                    <Link to="/shop"><CartWidget /></Link>
+                    <Link to="/cart"><CartWidget /></Link>
                 </div>
             </div>
 

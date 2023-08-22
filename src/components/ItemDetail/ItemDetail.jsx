@@ -1,21 +1,40 @@
 import './ItemDetail.css';
 import { ItemCount } from '../ItemCount/ItemCount'
-export function ItemDetail({ name, price, stock, image, plot,volumen }) {
+import { useState } from 'react';
+export function ItemDetail({ item }) {
 
-    const formatPrice = new Intl.NumberFormat().format(parseFloat(price))
+    const [count, setCount] = useState(1)
+    const [buy, setBuy] = useState({})
+   
+
+    const handleLess = () => {
+        count > 1 && setCount(count - 1)
+    }
+
+    const handlePlus = () => {
+        count < item.stock && setCount(count + 1)
+
+    }
+
+    const handleOnAdd = () => {
+        setBuy({ ...item, count })
+    }
+
+    
+    const formatPrice = new Intl.NumberFormat().format(parseFloat(item.rice))
     return (
         <article className='item-detail'>
             <div className='id-img'>
-                <img src={image} alt="front manga" />
+                <img src={item.urlImage} alt="front manga" />
             </div>
             <div className='itm-d-detail'>
                 <div className='itm-d-content'>
                     <h2 className='itm-d-title'>
-                    {name+' v.'+volumen}
+                        {item.name + ' v.' + item.volumen}
                     </h2>
                     <p className='itm-d-price'>${formatPrice}</p>
-                    <p className='itm-d-descriptiom'>{plot}</p>
-                    <ItemCount stock={stock} initial={1} />
+                    <p className='itm-d-descriptiom'>{item.plot}</p>
+                    <ItemCount count={count} handleLess={handleLess} handlePlus={handlePlus} handleOnAdd={handleOnAdd} />
                 </div>
             </div>
         </article>
