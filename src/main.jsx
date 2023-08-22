@@ -14,7 +14,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 
     <React.StrictMode>
-        {/* <CartContext.Provider value={[]}> */}
         <CartProvider>
             <BrowserRouter>
                 <header>
@@ -28,7 +27,6 @@ root.render(
                 </Routes>
             </BrowserRouter>
         </CartProvider>
-        {/* </CartContext.Provider>     */}
     </React.StrictMode>
 )
 

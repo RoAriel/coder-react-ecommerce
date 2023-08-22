@@ -1,7 +1,12 @@
 import './ItemDetail.css';
 import { ItemCount } from '../ItemCount/ItemCount'
 import { useState } from 'react';
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
+
 export function ItemDetail({ item }) {
+
+    const cartContext = useContext(CartContext)
 
     const [count, setCount] = useState(1)
     const [buy, setBuy] = useState({})
@@ -18,6 +23,8 @@ export function ItemDetail({ item }) {
 
     const handleOnAdd = () => {
         setBuy({ ...item, count })
+        cartContext.addToCart(buy)
+        cartContext.incrementCartQuantity()
     }
 
     

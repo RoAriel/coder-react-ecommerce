@@ -12,22 +12,38 @@ export function CartProvider({ children }) {
     }
 
     const addToCart = (item) => {
-        setCartList(cartList.push(item))
-        setQuantity(cartQuantity + 1)
+
+        let ids = cartList.map(e => e.id)
+        let newList = []
+
+        if(!ids.includes(item.id)){
+            newList = cartList.push(item)
+        }
+        
+        setCartList(newList)
     }
 
     const removeList = () => {
         setCartList([])
+        setQuantity(0)
     }
 
     const deleteItem = (id) => {
+
         let item = (cartList.find(i => i.id === id))[0]
+
         let idexItem = cartList.indexOf(item);
-        idexItem !== -1 && setCartList(cartList.splice(idexItem, 1))
+
+        let newCartList = cartList.splice(idexItem, 1)
+
+        idexItem !== -1 && setCartList(newCartList)
+
+        setQuantity(cartQuantity - 1)
     }
 
 
     return <CartContext.Provider value={{
+        cartList: cartList,
         cartQuantity: cartQuantity,
         incrementCartQuantity: incrementCartQuantity,
         addToCart: addToCart,
