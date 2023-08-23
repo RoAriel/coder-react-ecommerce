@@ -6,7 +6,10 @@ import { CartContext } from '../Context/CartContext';
 
 export function ItemDetail({ item }) {
 
-    const cartContext = useContext(CartContext)
+    const {
+        incrementCartQuantity,
+        addToCart
+    } = useContext(CartContext)
 
     const [count, setCount] = useState(1)
     const [buy, setBuy] = useState({})
@@ -23,12 +26,12 @@ export function ItemDetail({ item }) {
 
     const handleOnAdd = () => {
         setBuy({ ...item, count })
-        cartContext.addToCart(buy)
-        cartContext.incrementCartQuantity()
+        addToCart(buy)
+        incrementCartQuantity()
     }
 
     
-    const formatPrice = new Intl.NumberFormat().format(parseFloat(item.rice))
+    const formatPrice = new Intl.NumberFormat().format(parseFloat(item.price))
     return (
         <article className='item-detail'>
             <div className='id-img'>

@@ -13,14 +13,14 @@ export function CartProvider({ children }) {
 
     const addToCart = (item) => {
 
-        let ids = cartList.map(e => e.id)
-        let newList = []
+        let ids = [...cartList].map(e => e.id)
+        let newList = [...cartList]
 
         if(!ids.includes(item.id)){
-            newList = cartList.push(item)
+            newList.push(item)
+            setCartList(newList)
         }
         
-        setCartList(newList)
     }
 
     const removeList = () => {
@@ -30,25 +30,27 @@ export function CartProvider({ children }) {
 
     const deleteItem = (id) => {
 
-        let item = (cartList.find(i => i.id === id))[0]
+        let item = [...cartList].find(i => i.id === id)[0]
 
-        let idexItem = cartList.indexOf(item);
+        let idexItem = [...cartList].indexOf(item)
 
-        let newCartList = cartList.splice(idexItem, 1)
+        let newCartList =[...cartList]
 
-        idexItem !== -1 && setCartList(newCartList)
+        idexItem !== -1 && newCartList.splice(idexItem, 1)
+        
+        setCartList(newCartList)
 
         setQuantity(cartQuantity - 1)
     }
 
 
     return <CartContext.Provider value={{
-        cartList: cartList,
-        cartQuantity: cartQuantity,
-        incrementCartQuantity: incrementCartQuantity,
-        addToCart: addToCart,
-        removeList: removeList,
-        deleteItem: deleteItem,
+        cartList,
+        cartQuantity,
+        incrementCartQuantity,
+        addToCart,
+        removeList,
+        deleteItem,
     }}>
         {children}
     </CartContext.Provider>
