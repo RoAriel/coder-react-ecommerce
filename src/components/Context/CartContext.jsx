@@ -25,13 +25,13 @@ export function CartProvider({ children }) {
 
     const deleteItem = (id) => {
 
-        let item = [...cartList].find(i => i.id === id)[0]
+        let item = [...cartList].find(i => i.id === id)
 
-        let idexItem = [...cartList].indexOf(item)
+        let indexItem = [...cartList].indexOf(item)
 
         let newCartList = [...cartList]
 
-        idexItem !== -1 && newCartList.splice(idexItem, 1)
+        indexItem !== -1 && newCartList.splice(indexItem, 1)
 
         setCartList(newCartList)
     }
@@ -40,11 +40,11 @@ export function CartProvider({ children }) {
         return cartList.length
     }
 
-    const totalPrice = () =>{
+    const totalPrice = () => {
         return cartList.reduce((acc, item) => acc + parseFloat(item.price) * item.count, 0)
     }
 
-    
+
     return <CartContext.Provider value={{
         cartList,
         ammountInCart,
@@ -52,7 +52,7 @@ export function CartProvider({ children }) {
         addToCart,
         removeList,
         deleteItem,
-        
+
     }}>
         {children}
     </CartContext.Provider>

@@ -1,32 +1,37 @@
 import './Cart.css'
 import { useContext } from "react";
-import {CartContext} from '../Context/CartContext'
-import {EmptyCart} from './EmptyCart'
+import { CartContext } from '../Context/CartContext'
+import { EmptyCart } from './EmptyCart'
 import { IconTrash } from '../Icon/Icon';
 
-export function Cart(){
-    const {cartList,ammountInCart,removeList,totalPrice} = useContext(CartContext)
+export function Cart() {
+    const { cartList, ammountInCart, removeList, totalPrice, deleteItem } = useContext(CartContext)
 
-    const handleClear = ()=>{
+    const handleClear = () => {
         removeList()
     }
 
-    return(
+    return (
 
         ammountInCart() === 0
-        ? <EmptyCart/> 
-        : <section>
-            <h2 className='text-color'>My Cart</h2>
-            {cartList.map( e => 
-            <div key={e.id} className='text-color in-column-flex'>
-                <h4>{e.name}</h4>
-                <p>${e.price}</p>
-                <p>{e.count}</p>
-                <p>${e.price * e.count}</p>
-            </div>
-            )}
-        <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>
-        <button onClick={handleClear}>Clear Cart <IconTrash/></button>
-        </section>
+            ? <EmptyCart />
+            : <section>
+                <h2 className='text-color'>My Cart</h2>
+                {cartList.map(e =>
+                    <article key={e.id} className='text-color in-column-flex'>
+                        <div key={e.id} className='text-color in-column-flex'>
+                            <h4>{e.name}</h4>
+                            <p>${e.price}</p>
+                            <p>{e.count}</p>
+                            <p>${e.price * e.count}</p>
+                        </div>
+                        <div>
+                            <button key={e.id} onClick={() => { deleteItem(e.id) }}><IconTrash /></button>
+                        </div>
+                    </article>
+                )}
+                <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>
+                <button onClick={handleClear}>Clear Cart <IconTrash /></button>
+            </section>
     )
 }
