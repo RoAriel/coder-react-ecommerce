@@ -23,15 +23,14 @@ export function CartProvider({ children }) {
         setCartList([])
     }
 
-    const deleteItem = (id) => {
+    const deleteItem = (itemToDel) => {
 
-        let item = [...cartList].find(i => i.id === id)
-
-        let indexItem = [...cartList].indexOf(item)
+        let indexItem = [...cartList].findIndex(i => i.id === itemToDel.id)
 
         let newCartList = [...cartList]
 
-        indexItem !== -1 && newCartList.splice(indexItem, 1)
+        indexItem !== -1 &&
+            newCartList[indexItem].count > 1 ? newCartList[indexItem].count -= 1 : newCartList.splice(indexItem, 1)
 
         setCartList(newCartList)
     }
