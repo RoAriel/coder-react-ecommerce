@@ -5,7 +5,7 @@ import {EmptyCart} from './EmptyCart'
 import { IconTrash } from '../Icon/Icon';
 
 export function Cart(){
-    const {cartList,ammountInCart,removeList,deleteItem,totalPrice} = useContext(CartContext)
+    const {cartList,ammountInCart,removeList,totalPrice} = useContext(CartContext)
 
     const handleClear = ()=>{
         removeList()
@@ -23,7 +23,6 @@ export function Cart(){
                 <p>${e.price}</p>
                 <p>{e.count}</p>
                 <p>${e.price * e.count}</p>
-                <button ><IconTrash/></button>
             </div>
             )}
         <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>
