@@ -4,28 +4,23 @@ export const CartContext = createContext([])
 
 export function CartProvider({ children }) {
 
-    const [cartQuantity, setQuantity] = useState(0)
+
     const [cartList, setCartList] = useState([])
 
-    const incrementCartQuantity = () => {
-        setQuantity(cartQuantity + 1)
-    }
+    const addToCart = (item, count) => {
 
-    const addToCart = (item) => {
+        let newItem = { ...item, count }
+        let newCartList = [...cartList]
 
-        let ids = [...cartList].map(e => e.id)
-        let newList = [...cartList]
+        let isInCart = newCartList.find((item) => item.id === newItem.id)
 
-        if(!ids.includes(item.id)){
-            newList.push(item)
-            setCartList(newList)
-        }
-        
+        isInCart ? isInCart.count += count : newCartList.push(newItem)
+
+        setCartList(newCartList)
     }
 
     const removeList = () => {
         setCartList([])
-        setQuantity(0)
     }
 
     const deleteItem = (id) => {
@@ -34,23 +29,30 @@ export function CartProvider({ children }) {
 
         let idexItem = [...cartList].indexOf(item)
 
-        let newCartList =[...cartList]
+        let newCartList = [...cartList]
 
         idexItem !== -1 && newCartList.splice(idexItem, 1)
-        
-        setCartList(newCartList)
 
-        setQuantity(cartQuantity - 1)
+        setCartList(newCartList)
     }
 
+    const ammountInCart = () => {
+        return cartList.length
+    }
 
+    const totalPrice = () =>{
+        return cartList.reduce((acc, item) => acc + parseFloat(item.price) * item.count, 0)
+    }
+
+    
     return <CartContext.Provider value={{
         cartList,
-        cartQuantity,
-        incrementCartQuantity,
+        ammountInCart,
+        totalPrice,
         addToCart,
         removeList,
         deleteItem,
+        
     }}>
         {children}
     </CartContext.Provider>
