@@ -4,26 +4,29 @@ import { useEffect, useState } from "react"
 import { Loader } from '../Loader/Loader'
 import { getItem } from '../Utils/asyncMock'
 import { useParams } from 'react-router-dom';
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../firebase/config'
 
 export function ItemDetailContainer() {
 
     const [isLoading, setIsLoading] = useState(true);
     const [item, setItem] = useState([]);
     const id = useParams().itemId
-    
+
     useEffect(() => {
-        getItem(id)
-        .then(item => {
-            setItem(item)
-            setIsLoading(false)
+
+        const itemRef = doc(db, "items", id)
+        getDoc(itemRef)
+            .then((resp) => {
+                setItem({ ...resp.data(), id: resp.id }),
+                    setIsLoading(false)
             })
     }, [])
 
     if (isLoading) return <Loader />
     return (
-
         <section className="idc-container">
-            <ItemDetail item={item}/>
+            <ItemDetail item={item} />
         </section>
     )
 }
