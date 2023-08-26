@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from '../Context/CartContext'
 import { EmptyCart } from './EmptyCart'
 import { IconTrash } from '../Icon/Icon';
+import { BuyForm } from '../Buy/BuyForm';
 
 export function Cart() {
     const { cartList, ammountInCart, removeList, totalPrice, deleteItem } = useContext(CartContext)
@@ -14,7 +15,8 @@ export function Cart() {
     return (
         ammountInCart() === 0
             ? <EmptyCart />
-            : <section>
+            :<>
+             <section>
                 <h2 className='text-color'>My Cart</h2>
                 {cartList.map(item =>
                 (
@@ -29,5 +31,9 @@ export function Cart() {
                 <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>
                 <button onClick={handleClear}>Clear Cart <IconTrash /></button>
             </section>
+        <BuyForm>
+
+        </BuyForm>
+        </>
     )
 }
