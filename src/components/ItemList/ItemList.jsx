@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export function ItemList({ items = [], category }) {
 
     return (
-        <article>
+        <>
             <div className='il-category'>
                 <h2>{category}</h2>
             </div>
@@ -22,6 +22,6 @@ export function ItemList({ items = [], category }) {
                     )
                 })}
             </section>
-        </article>
+        </>
     )
 }
