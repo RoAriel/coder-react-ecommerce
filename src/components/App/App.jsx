@@ -1,10 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { NavBar } from '../NavBar/NavBar'
 import { ItemListContainer } from '../ItemListContainer/ItemListContainer';
-import { ItemDetail } from '../ItemDetail/ItemDetail';
-import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer';
-
 
 export function App() {
 

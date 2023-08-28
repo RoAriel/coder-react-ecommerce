@@ -9,8 +9,8 @@ export function NavBar() {
                     <Link to='/'><img src={logoJump} alt="logo-Jump" /></Link>
                     <nav className='nav-rout'>
                         <Link className='category' to="/"><h4>Home</h4></Link>
-                        <Link className='category' to="/category/manga"><h4>Mangas</h4></Link>
-                        <Link className='category' to="/category/manhwa"><h4>Manhwas</h4></Link>
+                        <Link className='category' to="/category/mangas"><h4>Mangas</h4></Link>
+                        <Link className='category' to="/category/manhwas"><h4>Manhwas</h4></Link>
                     </nav>
                 <div>
                     <Link to="/cart"><CartWidget /></Link>
