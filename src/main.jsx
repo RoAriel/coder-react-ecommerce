@@ -7,6 +7,7 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { Cart } from './components/Cart/Cart'
 import {CartProvider} from './components/Context/CartContext';
+import { BuyOut } from './components/Buy/BuyOut';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -24,6 +25,7 @@ root.render(
                     <Route path='/item/:itemId' element={<ItemDetailContainer />} />
                     <Route path='/category/:category' element={<ItemListContainer />} />
                     <Route path='/cart' element={<Cart />} />
+                    <Route path='/buyout' element={<BuyOut/>} />
                 </Routes>
             </BrowserRouter>
         </CartProvider>

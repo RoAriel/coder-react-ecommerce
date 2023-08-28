@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CartContext } from '../Context/CartContext'
 import { EmptyCart } from './EmptyCart'
 import { IconTrash } from '../Icon/Icon';
-import { BuyForm } from '../Buy/BuyForm';
+import { Link } from "react-router-dom";
 
 export function Cart() {
     const { cartList, ammountInCart, removeList, totalPrice, deleteItem } = useContext(CartContext)
@@ -11,7 +11,7 @@ export function Cart() {
     const handleClear = () => {
         removeList()
     }
-    console.log(cartList)
+
     return (
         ammountInCart() === 0
             ? <EmptyCart />
@@ -30,10 +30,9 @@ export function Cart() {
                 ))}
                 <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>
                 <button onClick={handleClear}>Clear Cart <IconTrash /></button>
+                <Link to='/buyout'> Contuinue...</Link>
             </section>
-        <BuyForm>
 
-        </BuyForm>
         </>
     )
 }
