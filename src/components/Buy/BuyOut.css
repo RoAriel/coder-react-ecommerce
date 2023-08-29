@@ -1,25 +1,33 @@
+input{
+    border-radius: 12px;
+    border: none;
+    text-indent: 10px;
+}
+.text-format{
+    text-align: center;
+    color: white;
+}
 .form-buy-data{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 1rem 1rem;
+    margin: 2rem 2rem;
+    padding: 0 5rem 0 5rem;
+
 }
-.bts {
+
+.bt-submit{
     background: none;
-    border: none;
+    border: solid;
+    border-color: #09c;
+    border-radius: 12px;
     cursor: pointer;
     height: fit-content;
-    padding: 2px 4px;
+    padding: 0.5rem 0.5rem;
+    color:white;
 }
 
-
-.bt-add {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0.5rem;  
-    border-radius: 12px;   
+.bt-submit:hover {
+    background-color: #09c;
 }
 
-.bg-gradiant{background: rgb(0, 153, 255);
-background: linear-gradient(180deg, rgba(0, 153, 255, 1) 0%, rgba(145, 211, 255, 1) 90%, rgba(255, 255, 255, 0.32816876750700286) 100%); 
-}
