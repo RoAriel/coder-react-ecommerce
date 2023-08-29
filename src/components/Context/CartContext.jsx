@@ -36,7 +36,7 @@ export function CartProvider({ children }) {
     }
 
     const ammountInCart = () => {
-        return cartList.length
+        return cartList.reduce((acc, item) => acc + item.count, 0)
     }
 
     const totalPrice = () => {

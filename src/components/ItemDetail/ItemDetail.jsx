@@ -26,6 +26,7 @@ export function ItemDetail({ item }) {
 
     
     const formatPrice = new Intl.NumberFormat().format(parseFloat(item.price))
+    
     return (
         <article className='item-detail'>
             <div className='id-img'>
@@ -36,7 +37,8 @@ export function ItemDetail({ item }) {
                     <h2 className='itm-d-title'>
                         {item.name + ' v.' + item.volumen}
                     </h2>
-                    <p className='itm-d-price'>${formatPrice}</p>
+                    <span>Collection: {item.collection}</span>
+                    <p className='itm-d-price'><strong>${formatPrice}</strong></p>
                     <p className='itm-d-descriptiom'>{item.plot}</p>
                     <ItemCount count={count} handleLess={handleLess} handlePlus={handlePlus} handleOnAdd={handleOnAdd} />
                 </div>

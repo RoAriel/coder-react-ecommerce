@@ -1,0 +1,37 @@
+.nf-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 2rem;
+    background-color: #09c;
+    border-radius: 12px;
+    color:white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nf-link-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nf-link{
+    background: none;
+    border: solid;
+    border-color: #09c;
+    border-radius: 12px;
+    cursor: pointer;
+    height: fit-content;
+    padding: 0.5rem 0.5rem;
+    color:white;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.nf-link:hover{
+    background-color: #09c;
+    
+}
