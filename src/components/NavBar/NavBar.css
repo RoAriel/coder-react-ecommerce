@@ -24,17 +24,5 @@
 }
 
 .category:hover {
-
-    animation: slide-top 0.2s linear both;
     color: #09f;
-}
-
-@keyframes slide-top {
-    0% {
-        transform: translateY(0)
-    }
-
-    25% {
-        transform: translateY(-10px)
-    }
 }

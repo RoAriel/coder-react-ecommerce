@@ -26,7 +26,6 @@ export function BuyOut() {
             items: simplifiedItems,
             total: totalPrice()
         }
-        console.log(buyout)
 
         const buyoutsRef = collection(db, "buyouts");
         addDoc(buyoutsRef, buyout)
