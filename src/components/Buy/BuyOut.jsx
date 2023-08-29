@@ -2,12 +2,12 @@ import './BuyOut.css'
 import { useContext, useState } from 'react'
 import { CartContext } from '../Context/CartContext'
 import { useForm } from 'react-hook-form'
-import { collection, addDoc } from 'firebase/firestore'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase/config'
 
 export function BuyOut() {
 
-    const [pedidoId, setPedidoId] = useState('')
+    const [orderId, setOrderId] = useState('')
     const { cartList, totalPrice, removeList } = useContext(CartContext)
     const { register, handleSubmit } = useForm()
     const simplifiedItems = []
@@ -24,22 +24,24 @@ export function BuyOut() {
         const buyout = {
             buyer: { contact },
             items: simplifiedItems,
-            total: totalPrice()
+            date: serverTimestamp(),
+            total: totalPrice(),
+            state: 'generated'
         }
 
         const buyoutsRef = collection(db, "buyouts");
         addDoc(buyoutsRef, buyout)
             .then((doc) => {
-                setPedidoId(doc.id)
+                setOrderId(doc.id)
                 removeList()
             })
     }
 
-    if (pedidoId) {
+    if (orderId) {
         return (
             <div className='greetings-container'>
                 <h2>Thanks for you Buy</h2>
-                <p>Your buy ID is: <strong>{pedidoId}</strong></p>
+                <p>Your buy ID is: <strong>{orderId}</strong></p>
 
             </div>
         )
