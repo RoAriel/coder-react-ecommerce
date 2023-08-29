@@ -2,7 +2,6 @@ import './ItemDetailContainer.css'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useEffect, useState } from "react"
 import { Loader } from '../Loader/Loader'
-import { getItem } from '../Utils/asyncMock'
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase/config'
