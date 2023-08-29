@@ -1,10 +1,80 @@
-.in-column-flex{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+p {
+    margin: 0;
 }
-.text-color{
-    color:azure;
-    margin-left: 2rem;
+.cart-empty{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-template-areas: ". . ."
+                         ". item1 ."
+                         ". item2 .";
 }
 
+.cart-empty .item1{
+    grid-area: item1;
+}
+
+.cart-empty .item2{
+    grid-area: item2;
+}
+
+.cart-container{
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.bt-cart{
+    background: none;
+    border: solid;
+    border-color: #09c;
+    border-radius: 12px;
+    cursor: pointer;
+    height: fit-content;
+    padding: 0.5rem 0.5rem;
+    color:white;
+}
+
+.bt-cart-trash{
+    background: none;
+    border: none;
+    border-color: #09c;
+    border-radius: 12px;
+    cursor: pointer;
+    color:white;
+}
+.bt-cart-trash:hover {
+    background-color: #09c;
+}
+
+.bt-cart:hover {
+        background-color: #09c;
+}
+
+.detail{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+.border-on{
+    border: 1px solid;
+    border-color: #09c;
+}
+
+.text-color{
+    color:white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.action-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.link-no-style{
+    text-decoration: none;
+}

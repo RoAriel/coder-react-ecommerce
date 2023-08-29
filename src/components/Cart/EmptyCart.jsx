@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 
 export function EmptyCart() {
     return (
-        <section>
-            <IconCartEmpty />
-            <Link to="/">
-                <button> Go to home and buy!</button>
+        <section className='cart-empty'>
+            <picture className='item1' >
+                <IconCartEmpty />
+            </picture>
+            <Link to="/" className='item2'>
+                <button className='bt-cart'> Go to home and buy!</button>
             </Link>
         </section>
     )
