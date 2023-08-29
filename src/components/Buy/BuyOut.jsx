@@ -40,7 +40,7 @@ export function BuyOut() {
     if (orderId) {
         return (
             <div className='greetings-container'>
-                <h2>Thanks for you Buy</h2>
+                <h2>Thanks for your Buy</h2>
                 <p>Your buy ID is: <strong>{orderId}</strong></p>
 
             </div>
@@ -54,7 +54,7 @@ export function BuyOut() {
                 <input type="text" placeholder="Enter your Name"{...register("name")} />
                 <input type="text" placeholder="Enter your phone number"{...register("phone")} />
                 <input type="email" placeholder="Enter your Email"{...register("email")} />
-                <button type="submit" className='bt-submit'>Complete you buy!</button>
+                <button type="submit" className='bt-submit'>Complete your buy!</button>
             </form>
         </section>
     )

@@ -10,8 +10,8 @@ export function NotFound({ search }) {
             </div>
             <div className='nf-link-container'>
                 <Link className='nf-link' to='/'>Go back home <IconHome/></Link>
-                <Link className='nf-link' to='/category/mangas'>Go back Mangas <IconBook/></Link>
-                <Link className='nf-link' to='/category/manhwas'>Go back Manhwas <IconBook/></Link>
+                <Link className='nf-link' to='/category/mangas'>Go back to Mangas <IconBook/></Link>
+                <Link className='nf-link' to='/category/manhwas'>Go back to Manhwas <IconBook/></Link>
             </div>
         </>
     )

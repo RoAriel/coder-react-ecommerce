@@ -38,7 +38,7 @@ export function Cart() {
                     <div className='action-container'>
                         <button className='bt-cart' onClick={handleClear}>Clear Cart <IconTrash /></button>
                         <h3 className='text-color'>Total Price: $ {totalPrice()}</h3>  
-                        <Link to='/buyout' className='bt-cart link-no-style'> Continue with the buy...</Link>
+                        <Link to='/buyout' className='bt-cart link-no-style'> Continue buying...</Link>
                     </div>
                 </section>
 

@@ -8,7 +8,7 @@ export function EmptyCart() {
                 <IconCartEmpty />
             </picture>
             <Link to="/" className='item2'>
-                <button className='bt-cart'> Go to home and buy!</button>
+                <button className='bt-cart'> Go home and buy!</button>
             </Link>
         </section>
     )
