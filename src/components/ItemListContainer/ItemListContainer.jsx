@@ -1,5 +1,3 @@
-import './ItemListContainer.css'
-import { getItems, getCategory } from '../Utils/asyncMock'
 import { useEffect, useState } from "react"
 import { Loader } from '../Loader/Loader'
 import { ItemList } from "../ItemList/ItemList";
