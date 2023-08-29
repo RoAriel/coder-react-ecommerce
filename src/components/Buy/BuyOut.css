@@ -31,3 +31,12 @@ input{
     background-color: #09c;
 }
 
+.greetings-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 2rem;
+    background-color: #09c;
+    border-radius: 12px;
+    color:white;
+    text-align: center;
+}

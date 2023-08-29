@@ -38,9 +38,9 @@ export function BuyOut() {
 
     if (pedidoId) {
         return (
-            <div>
+            <div className='greetings-container'>
                 <h2>Thanks for you Buy</h2>
-                <p>Your buy ID is: {pedidoId}</p>
+                <p>Your buy ID is: <strong>{pedidoId}</strong></p>
 
             </div>
         )
