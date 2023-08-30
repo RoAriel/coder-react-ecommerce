@@ -14,10 +14,11 @@ export function BuyOut() {
     const { register, handleSubmit } = useForm()
     const { cartList, totalPrice, removeList } = useContext(CartContext)
 
+    let order = {}
     const buy = (contact) => {
 
         //setOrder(
-        const order =
+         order =
             {
             buyer: { contact },
             items: simpleCart(cartList),
