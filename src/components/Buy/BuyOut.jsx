@@ -1,36 +1,33 @@
 import './BuyOut.css'
+import { simpleCart } from '../Utils/utils'
 import { useContext, useState } from 'react'
 import { CartContext } from '../Context/CartContext'
 import { useForm } from 'react-hook-form'
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../firebase/config'
+import { BuyDetail } from '../BuyDetail/BuyDetail'
 
 export function BuyOut() {
 
     const [orderId, setOrderId] = useState('')
-    const { cartList, totalPrice, removeList } = useContext(CartContext)
+    const [order, setOrder] = useState({})
     const { register, handleSubmit } = useForm()
-    const simplifiedItems = []
-
-    cartList.map(item => {
-        const { id, name, price, count } = { ...item }
-        const simpleItem = { id, name, price, count }
-
-        simplifiedItems.push(simpleItem)
-    })
+    const { cartList, totalPrice, removeList } = useContext(CartContext)
 
     const buy = (contact) => {
 
-        const buyout = {
+        setOrder({
             buyer: { contact },
-            items: simplifiedItems,
-            date: serverTimestamp(),
+            items: simpleCart(cartList),
+            date: new Date(),
             total: totalPrice(),
             state: 'generated'
-        }
+        })
+        
 
         const buyoutsRef = collection(db, "buyouts");
-        addDoc(buyoutsRef, buyout)
+        
+        addDoc(buyoutsRef, order)
             .then((doc) => {
                 setOrderId(doc.id)
                 removeList()
@@ -39,11 +36,13 @@ export function BuyOut() {
 
     if (orderId) {
         return (
+            <>
             <div className='greetings-container'>
                 <h2>Thanks for your Buy</h2>
                 <p>Your buy ID is: <strong>{orderId}</strong></p>
-
             </div>
+            <BuyDetail order={order}/>
+            </>
         )
     }
 
