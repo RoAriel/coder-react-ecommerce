@@ -48,7 +48,7 @@ return (
             <BuyDetail order={order} />
         </>
         :
-        <section>
+        <section className='form-container'>
             <h2 className='text-format'>Finalize your purchase</h2>
             <form name="formulario" className="form-buy-data" onSubmit={handleSubmit(buy)}>
                 <input type="text" placeholder="Enter your Name"{...register("name")} />

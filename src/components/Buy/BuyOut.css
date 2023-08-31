@@ -7,13 +7,23 @@ input{
     text-align: center;
     color: white;
 }
-.form-buy-data{
+
+.form-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-buy-data{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     gap: 1rem;
     margin: 2rem 2rem;
     padding: 0 5rem 0 5rem;
-
+    width: 25rem;
 }
 
 .bt-submit{
