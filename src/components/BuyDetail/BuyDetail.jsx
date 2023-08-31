@@ -9,9 +9,13 @@ import Paper from '@mui/material/Paper';
 import { Link } from 'react-router-dom';
 
 export function BuyDetail({ order }) {
+   
+    const time = (order.date.getHours()+":"+order.date.getMinutes()+":"+order.date.getSeconds())
+
     return (
         <section className='dt-container'>
             <h4 className='center'>Buy Detail</h4>
+            <p> {order.date.toLocaleDateString()} - {time}</p>
         <TableContainer component={Paper}>
             <Table size="small">
                 <TableHead>

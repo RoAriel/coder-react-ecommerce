@@ -43,3 +43,8 @@
 .bt-home:hover {
   background-color: #09c;
 }
+
+ p{
+  text-align: center;
+  color: white;
+}
