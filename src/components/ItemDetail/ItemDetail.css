@@ -48,6 +48,7 @@
 
 .itm-d-descriptiom {
     font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    text-wrap: balance;
     color: black;
 }

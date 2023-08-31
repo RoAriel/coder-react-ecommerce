@@ -4,6 +4,7 @@ import { CartContext } from '../Context/CartContext'
 import { EmptyCart } from './EmptyCart'
 import { IconTrash } from '../Icon/Icon';
 import { Link } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 
 export function Cart() {
     const { cartList, ammountInCart, removeList, totalPrice, deleteItem } = useContext(CartContext)
@@ -31,6 +32,7 @@ export function Cart() {
                             <p>${item.price}</p>
                             <p>{item.count}</p>
                             <p>${item.price * item.count}</p>
+                            <Toaster position="top-center" reverseOrder={false}/>
                             <button className='bt-cart-trash' onClick={() => { deleteItem(item) }}><IconTrash /></button>
                         </div>
 

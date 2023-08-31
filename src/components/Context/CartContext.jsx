@@ -1,4 +1,6 @@
 import { createContext, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
+import { toastStyleDel} from '../Utils/utils';
 
 export const CartContext = createContext([])
 
@@ -33,6 +35,8 @@ export function CartProvider({ children }) {
             newCartList[indexItem].count > 1 ? newCartList[indexItem].count -= 1 : newCartList.splice(indexItem, 1)
 
         setCartList(newCartList)
+
+        toast('Item deleted', toastStyleDel())
     }
 
     const ammountInCart = () => {

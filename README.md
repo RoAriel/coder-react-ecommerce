@@ -11,6 +11,8 @@ You can see this project deployed in [Netlify](https://www.netlify.com/): [JF-Ma
 * [react-router-dom](https://reactrouter.com/en/main)
 * [firebase](https://firebase.google.com/)
 * [react-hook-form](https://react-hook-form.com/)
+* [react-hot-toast](https://react-hot-toast.com/)
+* [MaterialUI](https://mui.com/material-ui/getting-started/installation/)
 
 # Clone and run
 The project was created using [Vite](https://vitejs.dev/).
