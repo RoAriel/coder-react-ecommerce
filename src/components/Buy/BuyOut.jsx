@@ -23,7 +23,7 @@ export function BuyOut() {
             total: totalPrice(),
             state: 'generated'
         }
-        //)
+        
         const buyoutsRef = collection(db, "buyouts");
         try {
             const docRef = await addDoc(buyoutsRef, newOrder);
