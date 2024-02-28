@@ -6,7 +6,7 @@ export function NotFound({ search }) {
     return (
         <>
             <div className="nf-container">
-                <h1>Sorry, {search.data} not Found.</h1>
+                <h1>Sorry, {search.data} not Found!.</h1>
             </div>
             <div className='nf-link-container'>
                 <Link className='nf-link' to='/'>Go back home <IconHome/></Link>
