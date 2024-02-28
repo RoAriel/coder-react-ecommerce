@@ -42,7 +42,7 @@ return (
     orderId
         ? <>
             <div className='greetings-container'>
-                <h2>Thanks for your Buy</h2>
+                <h2>Thanks for your Buy!</h2>
                 <p>Your buy ID is: <strong>{orderId}</strong></p>
             </div>
             <BuyDetail order={order} />
