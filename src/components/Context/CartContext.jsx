@@ -36,7 +36,7 @@ export function CartProvider({ children }) {
 
         setCartList(newCartList)
 
-        toast('Item deleted', toastStyleDel())
+        toast('Item deleted!', toastStyleDel())
     }
 
     const ammountInCart = () => {
