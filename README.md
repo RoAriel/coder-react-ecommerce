@@ -4,7 +4,8 @@ Final [React](https://us.coderhouse.com/online/reactjs) project of the [Coder Ho
 # Description
 This is an e-commerce of Mangas and Manhwas, the simplicity of UI makes its use easy
 
-# Hosting
+# Hosting 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58c6f719-5263-4c14-9971-6ea3f2ae2338/deploy-status)](https://app.netlify.com/sites/jf-mangas/deploys)
 You can see this project deployed in [Netlify](https://www.netlify.com/): [JF-Mangas](https://jf-mangas.netlify.app/)
 
 # Public use dependencies
