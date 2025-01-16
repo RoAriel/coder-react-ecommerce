@@ -1,12 +1,14 @@
 import './ItemList.css'
 import { Item } from '../Item/Item'
 import { Link } from 'react-router-dom'
+import { capitalizeFirstLetter } from '../Utils/utils.js'
+
 export function ItemList({ items = [], category }) {
 
     return (
         <>
             <div className='il-category'>
-                <h2>{category}</h2>
+                <h2>{capitalizeFirstLetter(category)}</h2>
             </div>
             <section className='il-container'>
                 {items.map((item) => {

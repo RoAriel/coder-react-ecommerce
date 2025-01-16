@@ -40,3 +40,8 @@ export function toastStyleDel(){
     }
   return style;
 }
+
+export function capitalizeFirstLetter(val) {
+  
+  return val ? String(val).charAt(0).toUpperCase() + String(val).slice(1) : ''
+}

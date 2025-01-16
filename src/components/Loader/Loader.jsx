@@ -1,7 +1,8 @@
 import './Loader.css'
-export function Loader(){
-    return(
-
-        <div className="spinner"></div>
+export function Loader() {
+    return (
+        <div className="center-spinner">
+            <div className="spinner"></div>
+        </div>
     )
 }
